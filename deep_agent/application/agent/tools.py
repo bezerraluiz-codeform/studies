@@ -19,7 +19,7 @@ def build_tools(*, web_search: WebSearchPort) -> list[BaseTool]:
     mantendo a camada de aplicação desacoplada de SDKs externos.
     """
 
-    @tool("web_search")
+    @tool("internet_search")
     def web_search_tool(query: str, max_results: int = 5) -> list[dict[str, Any]]:
         """Pesquisa na web.
 
@@ -39,3 +39,4 @@ def build_tools(*, web_search: WebSearchPort) -> list[BaseTool]:
 
     return [web_search_tool]
 
+__all__ = ["build_tools"]
