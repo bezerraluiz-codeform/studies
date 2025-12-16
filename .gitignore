@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+*.dist-info/
+
+# Ferramentas de qualidade
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Ambientes virtuais
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema operacional
+.DS_Store
